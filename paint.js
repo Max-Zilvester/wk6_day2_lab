@@ -1,5 +1,9 @@
-const Paint = function (litres) {
-    this.litres = litres
+const Paint = function () {
+    this.litres = 0;
 }
 
-module.exports = Paint
+Paint.prototype.addPaint = function(litres)  {
+    this.litres + litres;
+}
+
+module.exports = Paint;

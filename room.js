@@ -1,7 +1,11 @@
-const Room = function(area, been_painted) {
-    this.area  = area;
-    this.been_painted = False;
+const Room = function(area) {
+    this.area = area;
+    this.been_painted = false;
 
 }
 
-module.exports = Room
+Room.prototype.paintRoom = function() {
+    this.been_painted = true;
+}
+
+module.exports = Room;
